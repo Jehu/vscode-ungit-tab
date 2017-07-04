@@ -12,7 +12,7 @@ Simple Ungit integration for Visual Studio Code
 
 # Sample
 
-![https://raw.githubusercontent.com/RomanValihura/vscode-ungit-tab/master/samples/ungit-vs.gif](Ungit Extension Sample)
+![Ungit Extension Sample](https://raw.githubusercontent.com/RomanValihura/vscode-ungit-tab/master/samples/ungit-vs.gif)
 
 # License
 [MIT](http://opensource.org/licenses/MIT)

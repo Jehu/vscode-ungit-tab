@@ -2,7 +2,7 @@
   "name": "ungit-tab",
   "displayName": "Ungit Tab",
   "description": "Add ungit to visual studio code",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "publisher": "rv170",
   "license": "MIT",
   "icon": "logo.png",
