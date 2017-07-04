@@ -16,8 +16,8 @@ const UNGIT_URI = VS.Uri.parse('ungit-view://authority/ungit-view');
 const showError = (message) => VS.window.showErrorMessage(message);
 
 const isUngitStartMessage = either(
-	test(/## Ungit started ##/g),
-	test(/Ungit server already running/g),
+	test(/^## Ungit started ##$/gm),
+	test(/^Ungit server already running$/gm),
 );
 
 const startUngit = (onUngitStart: Function) => {
@@ -31,6 +31,7 @@ const startUngit = (onUngitStart: Function) => {
   killUngitProcess = () => ungitProcess.kill();
   ungitProcess.stderr.on('data', showError);
 	ungitProcess.stdout.on('data', (message) => {
+    VS.window.showInformationMessage(message.toString());
 		isUngitStartMessage(message) && onUngitStart();
 	});
 }
