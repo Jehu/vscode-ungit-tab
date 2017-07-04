@@ -4,12 +4,23 @@
   "description": "Add ungit to visual studio code",
   "version": "0.0.5",
   "publisher": "rv170",
+  "license": "MIT",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.13.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "ungit",
+    "git",
+    "git-ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RomanValihura/vscode-ungit-tab.git"
+  },
   "activationEvents": [
     "workspaceContains:.git/config"
   ],
