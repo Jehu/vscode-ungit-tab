@@ -61,6 +61,6 @@ export const activate = (context: VS.ExtensionContext) => {
 	});
 }
 
-export const deactivat = () => {
+export const deactivate = () => {
   killUngitProcess && killUngitProcess();
 };
