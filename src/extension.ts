@@ -22,7 +22,7 @@ const isUngitStartMessage = either(
 
 const startUngit = (onUngitStart: Function) => {
 	const ungitProcess = spawn('node', [
-		join(__dirname, '../../node_modules/.bin/ungit'),
+		join(__dirname, '../../node_modules/ungit/bin/ungit'),
 		'--no-b',
 		'--dev',
 		'--maxNAutoRestartOnCrash=0'
@@ -31,9 +31,9 @@ const startUngit = (onUngitStart: Function) => {
   killUngitProcess = () => ungitProcess.kill();
   ungitProcess.stderr.on('data', showError);
 	ungitProcess.stdout.on('data', (message) => {
-    VS.window.showInformationMessage(message.toString());
 		isUngitStartMessage(message) && onUngitStart();
 	});
+  ungitProcess.on('error', showError);
 }
 
 const showUngit = () => {
@@ -61,6 +61,6 @@ export const activate = (context: VS.ExtensionContext) => {
 	});
 }
 
-export const deactivate = () => {
+export const deactivat = () => {
   killUngitProcess && killUngitProcess();
 };

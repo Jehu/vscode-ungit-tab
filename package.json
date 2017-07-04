@@ -2,7 +2,7 @@
   "name": "ungit-tab",
   "displayName": "Ungit Tab",
   "description": "Add ungit to visual studio code",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "publisher": "rv170",
   "engines": {
     "vscode": "^1.13.0"
@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "workspaceContains:.git/config"
   ],
   "main": "./out/src/extension",
   "contributes": {},
