@@ -22,12 +22,10 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "dependencies": {
-    "axios": "^0.16.2",
     "ramda": "^0.24.1",
     "ungit": "^1.1.21"
   },
   "devDependencies": {
-    "@types/axios": "^0.14.0",
     "@types/mocha": "^2.2.32",
     "@types/node": "^6.0.40",
     "@types/ramda": "^0.24.1",
