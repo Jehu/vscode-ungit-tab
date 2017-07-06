@@ -8,3 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Ungit item in status bar
 - Checking workspace for containing initialized git repository
+
+## [0.0.9] - 2017-07-06
+### Added
+- Add command for bind keys combination
+- Add icon in status bar

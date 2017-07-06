@@ -9,7 +9,7 @@ import { UngitProvider } from './UngitProvider';
 let killUngitProcess;
 
 const EXTENSION_TAB_NAME = 'Ungit';
-const COMMAND_SHOW = 'extension.showUngit';
+const COMMAND_SHOW = 'ungitTab.showUngit';
 const VS_HTML_PREVIEW = 'vscode.previewHtml';
 const UNGIT_URI = VS.Uri.parse('ungit-view://authority/ungit-view');
 
@@ -51,7 +51,7 @@ export const activate = (context: VS.ExtensionContext) => {
   const status = VS.window.createStatusBarItem(VS.StatusBarAlignment.Right, 100);
 
   startUngit(() => {
-    status.text = EXTENSION_TAB_NAME;
+    status.text = '$(git-branch-delete) ' + EXTENSION_TAB_NAME;
     status.command = COMMAND_SHOW;
     status.show();
     context.subscriptions.push(
