@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "ramda": "^0.24.1",
-    "ungit": "^1.1.21"
+    "ungit": "^1.4"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.32",
